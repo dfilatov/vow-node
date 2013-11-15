@@ -1,0 +1,30 @@
+{
+    "name" : "vow-node",
+    "version" : "0.1.0",
+    "description" : "Extension for Vow to work with nodejs-style callbacks",
+    "homepage" : "https://github.com/dfilatov/vow-node",
+    "keywords" : ["vow", "nodejs", "callback", "promise", "promisify"],
+    "author" : "Dmitry Filatov <dfilatov@yandex-team.ru>",
+    "contributors" : [{
+        "name"  : "Dmitry Filatov",
+        "email" : "dfilatov@yandex-team.ru"
+    }],
+    "repository":{
+        "type" : "git",
+        "url"  : "http://github.com/dfilatov/vow-node.git"
+    },
+    "dependencies": {},
+    "peerDependencies" : {
+        "vow": "~0.3.9"
+    },
+    "devDependencies": {
+        "vow": "~0.3.9",
+        "nodeunit" : "",
+        "istanbul" : ""
+    },
+    "main" : "lib/vow-node",
+    "engines" : { "node" : ">= 0.4.0" },
+    "scripts" : {
+        "test" : "./node_modules/istanbul/lib/cli.js test test/utils/runner.js"
+    }
+}
