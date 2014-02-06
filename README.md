@@ -1,6 +1,6 @@
-Vow-node [![NPM version](https://badge.fury.io/js/vow-node.png)](http://badge.fury.io/js/vow-node) [![Build Status](https://secure.travis-ci.org/dfilatov/vow-node.png)](http://travis-ci.org/dfilatov/vow-node)
+vow-node [![NPM version](https://badge.fury.io/js/vow-node.png)](http://badge.fury.io/js/vow-node) [![Build Status](https://secure.travis-ci.org/dfilatov/vow-node.png)](http://travis-ci.org/dfilatov/vow-node)
 =========
-Vow-node is a small extension for Vow to work with nodejs-style callbacks
+Vow-node is a small extension for [vow](https://github.com/dfilatov/vow) to work with nodejs-style callbacks
 
 Getting Started
 ---------------
