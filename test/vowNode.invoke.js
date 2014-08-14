@@ -10,8 +10,16 @@ module.exports = {
         VowNode.invoke(fn, 'p1', 2);
     },
 
-    'resulting promise should be fulfilled when callback has called without first argument' : function(test) {
+    'resulting promise should be fulfilled when callback has called with "null" as first argument' : function(test) {
         VowNode.invoke(function(cb) { cb(null, 'ok'); }).then(
+            function(res) {
+                test.strictEqual(res, 'ok');
+                test.done();
+            });
+    },
+
+    'resulting promise should be fulfilled when callback has called with "undefined" as first argument' : function(test) {
+        VowNode.invoke(function(cb) { cb(undefined, 'ok'); }).then(
             function(res) {
                 test.strictEqual(res, 'ok');
                 test.done();
