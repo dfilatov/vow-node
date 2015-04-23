@@ -34,6 +34,13 @@ module.exports = {
             });
     },
 
+    'resulting promise should be fulfilled with array when callback has called with multiple arguments' : function(test) {
+        VowNode.invoke(function(cb) { cb(undefined, 'arg1', 'arg2'); }).then(function(res) {
+            test.deepEqual(res, ['arg1', 'arg2']);
+            test.done();
+        });
+    },
+
     'resulting promise should be rejected when callback has called with error-like first argument' : function(test) {
         var e = Error('error');
         VowNode.invoke(function(cb) { cb(e); }).fail(
