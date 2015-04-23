@@ -1,6 +1,6 @@
 {
     "name" : "vow-node",
-    "version" : "0.2.1",
+    "version" : "0.3.0",
     "description" : "Extension for Vow to work with nodejs-style callbacks",
     "homepage" : "https://github.com/dfilatov/vow-node",
     "keywords" : ["vow", "nodejs", "callback", "promise", "promisify"],
